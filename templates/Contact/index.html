@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}
+Contact | ISVR
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="/static/css/contact.css">
+{% endblock link %}
+
+{% block content %}
+
+<div class="contact-section">
+    <div class="contact-container flex container">
+        <div class="con-left">
+            <h1>Get in Touch.</h1>
+            <div class="con-d flex">
+                <h2>Address.</h2>
+                <p>Head Office: ISVR Research Lab, RCE, Roorkee, Uttarakhand 247667</p>
+                <h2>Contact</h2>
+                <p>+91 88820 54894</p>
+                <h2>Mail us at</h2>
+                <p>info@indoplanetxsvr.com</p>
+            </div>
+        </div>
+        <div class="con-right">
+            <h2>How can we help you?</h2>
+            <form method="POST" action="/contact/">
+                {% csrf_token %}
+                <div class="contact-form flex">
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="FullName">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <label for="Contact">Contact Number</label>
+                    <input type="text" name="contact" id="contact" placeholder="Contact Number">
+                    <label for="Message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your Message Here"></textarea>
+                    <button type="submit" class="submit-btn primary-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

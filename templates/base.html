@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/asset/assetlogo.png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    {% block link %}{% endblock link %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">We work in defence and space Manufacturing!</div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="/static/asset/assetlogo.png" alt="ISVR">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="/" class="hover-link">Home</a></li>
+                    <li><a href="/about" class="hover-link">About</a></li>
+                    <li><a href="/gallery" class="hover-link">Gallery</a></li>
+                    <li><a href="/services" class="hover-link">Services</a></li>
+                    <li><a href="#" class="hover-link secondary-btn">Events</a></li>
+                    <li><a href="/contact" class="hover-link primary-btn">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock content %}
+
+    <section class="footer">
+        <div class="footer-top">
+            <div class="container flex footer-top-container">
+                <div class="company">
+                    <h2>IndoplanetX Space Vault and Research</h2>
+                    <p>Head Office: ISVR Research Lab, RCE, Roorkee, Uttarakhand 247667</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/contact/lab-setup">Lab Setup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/faq">FAQs</a></li>
+                        <li><a href="/contact/internship">Internship</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-btm">
+            <div class="footer-text flex ">
+                <h4>IndoplanetX Space Vault and Research</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/isvr01/" class="soc-icons"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/i_s_v_r_/" class="soc-icons"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/indian-space-vault-and-research/" class="soc-icons"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/static/js/responsive.js"></script>
+    <script src="/static/js/slider.js"></script>
+    <script src="/static/js/popup.js"></script>
+</body>
+</html>

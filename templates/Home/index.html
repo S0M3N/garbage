@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}
+Home | ISVR
+{% endblock title %}
+
+{% block link %}
+    <link rel="stylesheet" href="/static/css/popup.css">
+{% endblock link %}
+
+{% block content %}
+
+<div class="popup">
+    <button id="close">&times;</button>
+    <h2>We are hiring</h2>
+    <p>
+        Apply for internship and start working with IndoplanetX Space Vault and Research!
+    </p>
+    <a href="/contact/internship" class=".buttn">Let's Go</a>
+</div>
+
+<header>
+    <div class="container header-section flex">
+        <div class="header-left flex">
+            <h1>IndoplanetX Space Vault And Research</h1>
+            <h3>We Build The Future!</h3>
+            <p>ISVR provide fully integrated mode of imparting valuable academic and technical knowledge in the
+                field of space science and medicine, computer programs, space technology, engineering and research
+                and development to the students.</p>
+            <a href="/contact" class="primary-btn contact-btn">Contact Us</a>
+        </div>
+        <div class="header-right">
+            <img src="/static/asset/asset4.png" alt="hero-image">
+        </div>
+    </div>
+</header>
+
+<section class="about-section">
+    <div class="container flex about-container">
+        <div class="feature-img">
+            <img src="/static/asset/asset14.jpg" class="about-img" alt="">
+        </div>
+        <div class="about-desc flex">
+            <h2>ISVR since 2016.</h2>
+            <h1>5+ Years of Industrial Experience.</h1>
+            <p>We have knowledge in the space area, and we have been working in this field solely to raise the
+                students' awareness and motivation to reach and explore the infinite sky with no boundaries since
+                our inception. We set lofty goals, work hard, and overcome obstacles to obtain the best results.
+
+                We have an unrivalled track record when it comes to rocket launches. ISVR Learning Labs have been
+                designed and effectively implemented.</p>
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <div class="features-header">
+            <h2>High Performance curriculum For Multiple Space and Defence Fields</h2>
+            <a href="/services" class="secondary-btn">See All Services <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        <div class="features-area flex">
+            <div class="features-card flex">
+                <i class="fa-solid fa-rocket icon"></i>
+                <h3>Rocketry</h3>
+                <p>All the assisstance for rockets, and rocket fuels</p>
+                <a href="#" class="secondary-btn">Learn More <i class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="features-card flex">
+                <i class="fa-solid fa-satellite icon"></i>
+                <h3>Satellite and Communications</h3>
+                <p>Building a cube satellite and attaining communications.</p>
+                <a href="#" class="secondary-btn">Learn More <i class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="features-card flex">
+                <img src="/static/asset/asset5.png" alt="">
+                <h3>Drone Technologies</h3>
+                <p>Building Drone for commercial and defence purposes</p>
+                <a href="#" class="secondary-btn">Learn More <i class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="features-card flex">
+                <i class="fa-solid fa-tablets icon"></i>
+                <h3>Space Medicine</h3>
+                <p>Working in Astronautical Hygiene and research for the medical implementations in the void of
+                    space.</p>
+                <a href="#" class="secondary-btn">Learn More <i class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="features-card flex">
+                <img src="/static/asset/asset6.png" alt="">
+                <h3>Astronomy</h3>
+                <p>Studying the cosmos and learning daily.</p>
+                <a href="#" class="secondary-btn">Learn More <i class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="features-card flex">
+                <i class="fa-solid fa-book icon"></i>
+                <h3>Space Research</h3>
+                <p>Working on many research related to space and defence.</p>
+                <a href="#" class="secondary-btn">Learn More <i class="fa-solid fa-right-long"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lab-setup-section">
+    <div class="container flex lab-setup-container">
+        <h3 style="color: #fff;">Setup Your Own Lab</h3>
+        <p style="color: #fff;">Take a step and start working with us.</p>
+        <a href="/contact/lab-setup" class="primary-btn">Lab setup Request</a>
+    </div>
+</section>
+
+<section class="association-section">
+    <div class="container flex association-container">
+        <h3>Incubated by</h3>
+        <div class="logos flex">
+            <img class="incu-icn" src="/static/asset/asset12.png" alt="">
+            <h4>In association with</h4>
+            <img class="incu-icn" src="/static/asset/asset13.png" alt="">
+        </div>
+    </div>
+</section>
+{% endblock content %}

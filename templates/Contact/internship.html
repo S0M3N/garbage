@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}
+Contact | ISVR
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="/static/css/contact.css">
+{% endblock link %}
+
+{% block content %}
+
+<div class="contact-section">
+    <div class="contact-container flex container">
+        <div class="con-left">
+            <h1>Be a part of our organization.</h1>
+            <div class="con-d flex">
+                <h2>Address.</h2>
+                <p>Head Office: ISVR Research Lab, RCE, Roorkee, Uttarakhand 247667</p>
+                <h2>Contact</h2>
+                <p>+91 88820 54894</p>
+                <h2>Mail us at</h2>
+                <p>info@indoplanetxsvr.com</p>
+            </div>
+        </div>
+        <div class="con-right">
+            <h2>Apply for Internship</h2>
+            <form method="POST" action="/contact/internship">
+                {% csrf_token %}
+                <div class="contact-form flex">
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="FullName">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <label for="Contact">Contact Number</label>
+                    <input type="text" name="contact" id="contact" placeholder="Contact Number">
+                    <label for="Course">Interest</label>
+                    <select name="interest" id="interest" style="border: 1px solid var(--primary-text-color);
+                    height: 35px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    width: 45%;
+                    ">
+                        <option value="None">-----Select Interest----</option>
+                        <option value="Cube Satellite">Cube Satellite</option>
+                        <option value="Drone Technologies">Drone Technologies</option>
+                        <option value="Rocketry">Rocketry</option>
+                        <option value="Space Medicine">Space Medicine</option>
+                        <option value="Space Research">Space Research</option>
+                        <option value="Astronomy">Astronomy</option>
+                    </select>
+                    <button type="submit" class="submit-btn primary-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
